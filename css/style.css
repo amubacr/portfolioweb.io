@@ -131,3 +131,68 @@ table {
 }
 
 /* Main Style Section */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0A1B3A;
+}
+
+/* Menghilangkan semua garis bawah pada link atau anchor */
+a {
+  text-decoration: none;
+}
+
+/* Bagian Navigation Bar pada Header Landing Page */
+.landing-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  padding: 1rem 5rem;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  gap: 5rem;
+
+  /* Landing-Header Styling */
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 16px 50px 0px rgba(194, 187, 240, 0.05);
+  background-color: #0A1B3A;
+
+}
+
+.landing-header__logo {
+  color: #EDEEC0;
+  font-family: 'Permanent Marker';
+  font-size: 1.875rem;
+  font-style: normal;
+  line-height: normal;
+  text-shadow: 7px 15px 30px rgba(43, 44, 40, 0.20);
+
+
+  padding: 0.9375rem;
+  /* align-items: center; */
+  text-align: center;
+
+}
+
+.landing-header__ButtonLink {
+  padding: 0.9375rem;
+  justify-content: center;
+  gap: 0.625rem;
+  margin: 0 10px;
+
+  /* box-shadow: 0px 0px 33px 0px rgba(140, 173, 223, 0.25); */
+}
+
+.landing-header__link {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 1.5625rem;
+  color: white;
+
+}
