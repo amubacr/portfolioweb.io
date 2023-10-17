@@ -201,6 +201,8 @@ a {
   font-size: 1.5625rem;
   color: white;
 
+  padding: 0 30px 0 30px;
+
 }
 
 .introduction {
@@ -274,4 +276,67 @@ a {
   margin: 10px 0;
   background: #2D4C74;
 
+}
+
+.element-1 {
+  width: 500px;
+}
+
+.element-1 img {
+  object-fit: cover;
+  position: absolute;
+  top: 235px;
+  left: 50px;
+}
+
+.label {
+  position: absolute;
+  top: 260px;
+  left: -100px;
+  transform: rotate(-90deg);
+  
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 21px;
+}
+
+.break-line__1{
+  width: 5px;
+  height: 178px;
+
+  position: absolute;
+  left: 50px;
+  top: 134px;
+  background-color: #EDEEC0;
+}
+
+.break-line__2{
+  width: 5px;
+  height: 90px;
+
+  position: absolute;
+  top: 320px;
+  left: 50px;
+  background-color: #EDEEC0;
+}
+
+iconify-icon {
+  color: #EDEEC0;
+}
+
+.__link-1 {
+  position: absolute;
+  top: 145px;
+  left: 55px;
+
+  padding: 5px;
+}
+
+.__link-2 {
+  position: absolute;
+  top: 190px;
+  left: 55px;
+
+  padding: 5px;
 }
