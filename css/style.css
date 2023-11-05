@@ -132,23 +132,44 @@ table {
 
 /* Main Style Section */
 
+:root {
+  --primary-color: rgba(10, 27, 58, 1);
+  --secondary-color: rgba(11, 24, 50, 1);
+  --color-white-1: rgba(237, 238, 192, 1);
+  --color-white-2: rgba(255, 255, 255, 1);
+  --gradient-primary: linear-gradient(126deg, #062561 10.58%, #0C1C3D 86.9%);
+  --gradient-secondary: linear-gradient(238deg, #062561 8.98%, #0C1C3D 82.04%);
+  --border-color-1: rgba(184, 183, 183, 0.50);
+  --card-color-head-1: linear-gradient(122deg, #5DA2FC -4.27%, #3264A5 103.11%);  
+  --border-card-1: rgba(50, 90, 150, 1);
+
+
+}
+
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  width: 98vw;
+  width: 100%;
   height: 100vh;
-  background: #0A1B3A;
+  display: flex;
+  background: var(--primary-color);
+  cursor: url('/assets/img/cursor/left_ptr.png'), auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  cursor: url('/assets/img/cursor/Text.png'), text;
 }
 
 /* Menghilangkan semua garis bawah pada link atau anchor */
 a {
   text-decoration: none;
-}
-
-.landing-page{
-  display: flex;
+  cursor: url('/assets/img/cursor/pointing_hand.ico'), pointer;
 }
 
 /* Bagian Navigation Bar pada Header Landing Page */
@@ -168,7 +189,6 @@ a {
   border: 2px solid rgba(0, 0, 0, 0.25);
   box-shadow: 5px 16px 50px 0px rgba(194, 187, 240, 0.05);
   background-color: #0A1B3A;
-
 }
 
 .landing-header__logo {
@@ -181,9 +201,7 @@ a {
 
 
   padding: 0.9375rem;
-  /* align-items: center; */
   text-align: center;
-
 }
 
 .landing-header__ButtonLink {
@@ -195,31 +213,38 @@ a {
   /* box-shadow: 0px 0px 33px 0px rgba(140, 173, 223, 0.25); */
 }
 
+.landing-header__right-container:hover a{
+  color: rgba(255, 255, 255, .3);
+}
+
 .landing-header__link {
   font-family: 'Poppins';
   font-weight: bold;
   font-size: 1.5625rem;
-  color: rgba(255, 255, 255, .25);
+  color: rgba(255, 255, 255, 1);
   
-
   padding: 0 30px 0 30px;
   transition: all 500ms ease-in-out;
-
 }
 
 .landing-header__link:hover {
   text-shadow: 1px 1px 80px rgb(137, 139, 148);
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1) !important;
+  /* text-decoration: underline var(--secondary-color); */
 }
 
 .landing-header__link:active {
   color: rgba(255, 255, 255, 1);
 }
 
+.Home:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
 .main-page {
   display: flex;
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -232,7 +257,7 @@ a {
   gap: 10px;
   padding: 0 10px;
 
-  top: 92%;
+  top: 21%;
   left: 574px;
 }
 
@@ -344,75 +369,66 @@ a {
 }
 
 .icon {
-  padding-bottom: 30px;
+  padding-bottom: 33px;
+  padding-left: 5px;
+}
+
+.iconc {
+  color: var(--color-white-1);
 }
 
 /* ! Social Media's Icons Section  */
-
-.__link-1 span {
-  background: url('https://api.iconify.design/basil/instagram-solid.svg?color=%23edeec0&width=24&height=24') no-repeat center center / contain;
-  content: url('https://api.iconify.design/basil/instagram-solid.svg?color=%23edeec0&width=24&height=24');
-  transition: all 500ms ease-in-out;
+.instagram {
+  transition: all 200ms ease-in-out;
 }
 
-.__link-2 span {
-  background: url('https://api.iconify.design/mingcute/github-fill.svg?color=%23edeec0&width=24&height=24') no-repeat center center / contain;
-  content: url('https://api.iconify.design/mingcute/github-fill.svg?color=%23edeec0&width=24&height=24');
-  transition: all 500ms ease-in-out;
+.instagram:hover {
+  scale: 1.2;
+  color: rgba(224, 18, 92, 1);
 }
 
-.__link-3 span {
-  background: url('https://api.iconify.design/cib/linkedin.svg?color=%23edeec0&width=24&height=24') no-repeat center center / contain;
-  content: url('https://api.iconify.design/cib/linkedin.svg?color=%23edeec0&width=24&height=24');
-  transition: all 500ms ease-in-out;
+.github {
+  transition: all 200ms ease-in-out;
 }
 
-.__link-4 span {
-  background: url('https://api.iconify.design/ri/pinterest-fill.svg?color=%23edeec0&width=24&height=24') no-repeat center center / contain;
-  content: url('https://api.iconify.design/ri/pinterest-fill.svg?color=%23edeec0&width=24&height=24');
-  transition: all 500ms ease-in-out;
+.github:hover {
+  scale: 1.2;
+  color: rgba(18, 18, 17, 1);
 }
 
-.__link-5 span {
-  background: url('https://api.iconify.design/ri/medium-fill.svg?color=%23edeec0&width=24&height=24') no-repeat center center / contain;
-  content: url('https://api.iconify.design/ri/medium-fill.svg?color=%23edeec0&width=24&height=24');
-  transition: all 500ms ease-in-out;
+.linkedin {
+  transition: all 200ms ease-in-out;
 }
 
-.__link-1 span:hover {
-  background: url('https://api.iconify.design/ri/instagram-fill.svg?color=%23d24dff&width=30&height=30') no-repeat center center / contain;
-  content: url('https://api.iconify.design/ri/instagram-fill.svg?color=%23d24dff&width=30&height=30');
+.linkedin:hover {
+  scale: 1.2;
+  color: rgba(82, 131, 204, 1);
 }
 
-.__link-2 span:hover {
-  background: url('https://api.iconify.design/mingcute/github-fill.svg?color=black&width=30&height=30') no-repeat center center / contain;
-  content: url('https://api.iconify.design/mingcute/github-fill.svg?color=black&width=30&height=30');
+.pinterest {
+  transition: all 200ms ease-in-out;
 }
 
-.__link-3 span:hover {
-  background: url('https://api.iconify.design/cib/linkedin.svg?color=%233264a5&width=30&height=30') no-repeat center center / contain;
-  content: url('https://api.iconify.design/cib/linkedin.svg?color=%233264a5&width=30&height=30');
+.pinterest:hover {
+  scale: 1.2;
+  color: rgba(251, 46, 46, 1);
 }
 
-.__link-4 span:hover {
-  background: url('https://api.iconify.design/ri/pinterest-fill.svg?color=red&width=30&height=30') no-repeat center center / contain;
-  content: url('https://api.iconify.design/ri/pinterest-fill.svg?color=red&width=30&height=30');
+.medium {
+  transition: all 200ms ease-in-out;
 }
 
-.__link-5 span:hover {
-  background: url('https://api.iconify.design/ri/medium-fill.svg?color=gray&width=30&height=30') no-repeat center center / contain;
-  content: url('https://api.iconify.design/ri/medium-fill.svg?color=gray&width=30&height=30');
+.medium:hover {
+  scale: 1.2;
+  color: rgba(22, 22, 22, 1);
 }
-
 
 /* ! Learn More Section */
 .learn-more {
   display: flex;
   position: relative;
   top: 650px;
-  right: 43%;
-  
-
+  right: 44%;
 }
 
 .__next-1 {
@@ -424,20 +440,21 @@ a {
   margin-bottom: 5px;
 }
 
-.__next-1 span {
-  background: url('https://api.iconify.design/bxs/down-arrow.svg?color=%23edeec0&width=50&height=50') no-repeat center center / contain;
-  content: url('https://api.iconify.design/bxs/down-arrow.svg?color=%23edeec0&width=50&height=50');
+.arrow-down {
+  align-self: center;
 }
 
 /* ! Portfolio Section */
 .portfolio {
   width: 100%;
-  height: 100vh;
-  background-color: #0A1B3A;
+  height: fit-content;
+  background-color: var(--secondary-color);
 
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   top: 120vh;
 }
 
@@ -447,14 +464,16 @@ a {
   font-size: 2.325rem;
   font-weight: 600;
   letter-spacing: 1px;
+  align-self: center;
+  align-items: center;
 
-  margin: 120px 0 5px 0;
+  margin: 120px 0 5px 90px;
 }
 
 .portfolio-options {
-  display: inline-flex;
+  display: flex;
   background-color: #0E2249;
-  position: absolute;
+  /* position: relative; */
   flex-shrink: 0;
   
   /* gap: 85px; */
@@ -469,14 +488,11 @@ a {
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 240%;
-  /* display: inline-block; */
-  /* flex-direction: row; */
-  /* align-content: center; */
 }
 
 .option-1, .option-2 {
   display: block;
-  cursor: pointer;
+  cursor:  url('/assets/img/cursor/pointing_hand.ico'), pointer;
   /* background-color: #fff; */
   text-align: center;
   width: 175px;
@@ -494,18 +510,33 @@ a {
 /* ! Portfolio Content Section */
 .left-card {
   display: flex;
-  position: absolute;
+  position: relative;
   flex-direction: row;
 
   width: 90%;
   height: 500px;
-  top: 34%;
-  margin: 50px;
+  /* margin: 50px; */
   padding: 50px;
 
   border-radius: 6px;
   border: 2px solid rgba(184, 183, 183, 0.50);
   background: linear-gradient(126deg, #062561 10.58%, #0C1C3D 86.9%);
+}
+
+.right-card {
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+
+  width: 90%;
+  height: 500px;
+  top: 100%;
+  margin: 50px;
+  padding: 50px;
+
+  border-radius: 6px;
+  border: 2px solid var(--border-card-1);
+  background: var(--gradient-secondary);
 }
 
 .left-card h3 {
@@ -516,6 +547,21 @@ a {
   
   position: absolute;
   left: 500px;
+  
+
+  background: linear-gradient(122deg, #5DA2FC -4.27%, #3264A5 103.11%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.right-card h3 {
+  font-family: 'Montserrat';
+  font-size: 35px;
+  font-weight: 700;
+  text-align: justify;
+  
+  position: relative;
+  right: 450px;
   
 
   background: linear-gradient(122deg, #5DA2FC -4.27%, #3264A5 103.11%);
@@ -536,9 +582,22 @@ a {
   margin-top: 20px;
 }
 
+.right-card h2 {
+  font-family: 'Montserrat';
+  font-size: 43px;
+  color: white;
+  font-weight: 700;
+  
+  position: absolute;
+  right: 500px;
+  top: 80px;
+
+  margin-top: 20px;
+}
+
 .left-card p {
   font: normal normal 400 20px/30px 'Roboto Mono' ;
-  text-align: justify;
+  text-align: left;
   color: white;
 
   position: absolute;
@@ -546,6 +605,18 @@ a {
   top: 140px;
 
   margin: 20px 50px 20px 0;
+}
+
+.right-card p {
+  font: normal normal 400 20px/30px 'Roboto Mono' ;
+  text-align: end;
+  color: white;
+
+  position: absolute;
+  right: 500px;
+  top: 140px;
+
+  margin: 20px 0 20px 50px;
 }
 
 .left-card figure img{
@@ -556,6 +627,16 @@ a {
 
   position: absolute;
   left: 50px;
+}
+
+.right-card figure img{
+  width: 400px;
+  height: 400px;
+  border: 1px solid white;
+  z-index: 1;
+
+  position: relative;
+  left: 150px;
 }
 
 .left-card figure .border {
@@ -569,8 +650,19 @@ a {
   border: 10px solid #325A96;
 }
 
-.button-card {
-  display: inline-flex;
+.right-card figure .border {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 77px;
+  top: 77px;
+
+  border-radius: 6px;
+  border: 10px solid #325A96;
+}
+
+.button-card-left {
+  display: flex;
   padding: 15px;
   align-items: center;
   margin-top: 20px;
@@ -585,23 +677,68 @@ a {
   color: white;
   font: normal normal 600 22px/0px 'Poppins';
 
-  gap: 5px;
+  gap: 10px;
 
-  transition: all 500ms ease-in;
+  transition: all 300ms ease-in;
 }
 
-.button-card span {
-  background: url('https://api.iconify.design/formkit/arrowright.svg?color=white&width=25&height=25') no-repeat center center / contain;
-  content: url('https://api.iconify.design/formkit/arrowright.svg?color=white&width=25&height=25');
-}
-
-.button-card:hover {
+.button-card-left:hover {
   background: linear-gradient(138deg, #2E54B4 4.16%, #071E59 95.55%);
   border: 0px solid #455B95;
   box-shadow: 0px 12px 0px 0px #0D1C41;
 }
 
-.button-card:active {
+.button-card-left:active {
   top: 81%;
   box-shadow: 0px 6px 0px 0px #0D1C41;
+}
+
+.arrow-right {
+  transition: all 300ms ease-in-out;
+}
+
+.arrow-right:hover {
+  scale: 1.1;
+  transform: translate(5px, 0px);
+}
+
+.button-card-right {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  margin-top: 20px;
+
+  position: absolute;
+  right: 500px;
+  top: 80%;
+
+  border-radius: 10px;
+  border: 2px solid #455B95;
+
+  color: white;
+  font: normal normal 600 22px/0px 'Poppins';
+
+  gap: 10px;
+
+  transition: all 300ms ease-in;
+}
+
+.button-card-right:hover {
+  background: linear-gradient(138deg, #2E54B4 4.16%, #071E59 95.55%);
+  border: 0px solid #455B95;
+  box-shadow: 0px 12px 0px 0px #0D1C41;
+}
+
+.button-card-right:active {
+  top: 81%;
+  box-shadow: 0px 6px 0px 0px #0D1C41;
+}
+
+.arrow-left {
+  transition: all 300ms ease-in-out;
+}
+
+.arrow-left:hover {
+  scale: 1.1;
+  transform: translate(-5px, 0px);
 }

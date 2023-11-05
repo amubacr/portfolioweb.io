@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amuba Notes | Portfolio Website</title>
     <link rel="stylesheet" href="css/style.css" />
-
     <!-- Fonts from fonts.google.com -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Coda:wght@400;800&family=Montserrat&family=Permanent+Marker&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/icon/code-bracket.svg">
+    <!-- ! Font Awesome Embed Script -->
+    <script src="https://kit.fontawesome.com/fd0661f57d.js" crossorigin="anonymous"></script>
   </head>
-
   <body>
-    <div id="landing-page" class="landing-page">
       <header class="landing">
         <nav class="landing-header" id="landing-header">
           <!-- Navigation Bar -->
-          <a href="/">
+          <a href="#main">
             <h2 class="landing-header__logo">Amuba Notes.</h2>
           </a>
           <nav class="landing-header__right-container">
-            <a href="#main" class="landing-header__link landing-header__ButtonLink">Home</a>
-            <a href="#portfolio" class="landing-header__link landing-header__ButtonLink">Portfolio</a>
-            <a href="#experience" class="landing-header__link landing-header__ButtonLink">Experience</a>
-            <a href="#about" class="landing-header__link landing-header__ButtonLink">About</a>
+            <a href="#main" class="landing-header__link landing-header__ButtonLink Home">Home</a>
+            <a href="#portfolio" class="landing-header__link landing-header__ButtonLink Portfolio ">Portfolio</a>
+            <a href="#experience" class="landing-header__link landing-header__ButtonLink Experience">Experience</a>
+            <a href="#about" class="landing-header__link landing-header__ButtonLink About">About</a>
           </nav>
         </nav>
         <aside class="social-media">
@@ -38,31 +38,31 @@
               <ul>
                 <li class="icon">
                   <a href="https://instagram.com/amubacraft._" target="_blank" class="__link-1">
-                    <span></span>
+                    <i class="fa-brands fa-instagram fa-xl iconc instagram"></i>
                   </a>
                 </li>
   
                 <li class="icon">
                   <a href="https://github.com/amubacr" target="_blank" class="__link-2">
-                    <span></span>
+                    <i class="fa-brands fa-github fa-xl iconc github"></i>
                   </a>
                 </li>
   
                 <li class="icon">
                   <a href="https://www.linkedin.com/in/ahmatframuja" target="_blank" class="__link-3">
-                    <span></span>
+                    <i class="fa-brands fa-linkedin-in fa-xl iconc linkedin"></i>
                   </a>
                 </li>
   
                 <li class="icon">
                   <a href="http://www.pinterest.com/amubacraft" target="_blank" class="__link-4">
-                    <span></span>
+                    <i class="fa-brands fa-pinterest fa-xl iconc pinterest"></i>
                   </a>
                 </li>
   
                 <li class="icon">
                   <a href="https://medium.com/@amubacraft" target="_blank" class="__link-5">
-                    <span></span>
+                    <i class="fa-brands fa-medium fa-xl iconc medium"></i>
                   </a>
                 </li>
               </ul>
@@ -86,21 +86,35 @@
         <div class="learn-more">
           <a href="#portfolio" class="__next-1">
             Learn More
-            <span></span>
+            <i class="fa-solid fa-sort-down fa-2xl arrow-down"></i>
           </a>
         </div>
 
         <div class="portfolio" id="portfolio">
-          <header class="title-section">
+          <div class="title-section">
             <h2>Portfolio</h2>
             <nav class="portfolio-options">
               <h3 class="option-1 option">Website</h3>
               <h3 class="option-2 option">Other</h3>
             </nav>
-          </header>
-
+          </div>
           <section class="left-card card-1">
             <h3>Project-1</h3>
+            <h2>Landing Page Anime Waifu</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Eros volutpat vitae tristique ac eu porttitor. Lacinia eleifend sagittis blandit amet ornare mauris velit malesuada sodales. Est scelerisque turpis eleifend enim. Aliquam sed ac justo velit. Non morbi ullamcorper viverra eu orci nec lorem. Id aliquam eget blandit eget. At sit in bibendum odio etiam. Turpis feugiat consequat fusce aliquet ac.
+            </p>
+            <figure>
+              <img src="assets/img/Picture-1.svg" alt="Link Tree Direction Thumbnail">
+              <div class="border"></div>
+            </figure>
+            <a href="" class="button-card-left">
+              <i class="fa-solid fa-arrow-right arrow-right"> </i>
+              Read More
+            </a>
+          </section>
+          <section class="right-card card-2">
+            <h3>Project-2</h3>
             <h2>Link Tree Direction Website</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur. Eros volutpat vitae tristique ac eu porttitor. Lacinia eleifend sagittis blandit amet ornare mauris velit malesuada sodales. Est scelerisque turpis eleifend enim. Aliquam sed ac justo velit. Non morbi ullamcorper viverra eu orci nec lorem. Id aliquam eget blandit eget. At sit in bibendum odio etiam. Turpis feugiat consequat fusce aliquet ac.
@@ -109,20 +123,13 @@
               <img src="assets/img/Picture-1.svg" alt="Link Tree Direction Thumbnail">
               <div class="border"></div>
             </figure>
-            <a href="" class="button-card">
-              <span></span>
+            <a href="" class="button-card-right">
               Read More
+              <i class="fa-solid fa-arrow-left arrow-left"> </i>
             </a>
-          </section>
-          
-          <main>
-
-          </main>
-
+          </section>         
         </div>
-
       </main>
-
-    </div>
+      <script src="js/index.js"></script>
   </body>
 </html>
