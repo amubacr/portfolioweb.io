@@ -159,17 +159,17 @@ body {
   height: 100vh;
   display: flex;
   background: var(--primary-color);
-  cursor: url('/assets/img/cursor/left_ptr.png'), auto;
+  cursor: url('../assets/img/cursor/left_ptr.png'), auto;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  cursor: url('/assets/img/cursor/Text.png'), text;
+  cursor: url('../assets/img/cursor/Text.png'), text;
 }
 
 /* Menghilangkan semua garis bawah pada link atau anchor */
 a {
   text-decoration: none;
-  cursor: url('/assets/img/cursor/pointing_hand.ico'), pointer;
+  cursor: url('../assets/img/cursor/pointing_hand.ico'), pointer;
 }
 
 /* Bagian Navigation Bar pada Header Landing Page */
