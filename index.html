@@ -27,6 +27,9 @@
             <a href="#about" class="landing-header__link landing-header__ButtonLink About">About</a>
           </nav>
         </nav>
+      </header>
+
+      <main class="main-page" id="main">
         <aside class="social-media">
           <div class="text-wrapper label">Follow My Social Network</div>
           <div class="social-media__link">
@@ -69,16 +72,13 @@
             </nav>
           </div>
         </aside>
-      </header>
-
-      <main class="main-page" id="main">
-        <section class="introduction">
+        <article class="introduction">
           <h3>Hello, My Name is</h3>
           <h2>Ahmat Framuja</h2>
           <section class="job">
             <h1>I'M FULL-STACK WEB DEVELOPER</h1>
           </section>
-        </section>
+        </article>
         
         <div class="break-1"></div>
         <div class="element-1"><img src="assets/img/Element-1.svg" alt="PC-1"></div>
@@ -90,12 +90,15 @@
           </a>
         </div>
 
-        <div class="portfolio" id="portfolio">
+        <article class="portfolio" id="portfolio">
           <div class="title-section">
             <h2>Portfolio</h2>
             <nav class="portfolio-options">
-              <h3 class="option-1 option">Website</h3>
-              <h3 class="option-2 option">Other</h3>
+              <input type="radio" class="ra-1" id="websiteRadio" name="tab" value="website" checked>
+              <label for="websiteRadio" class="option-1 option">Website</label>
+
+              <input type="radio" class="ra-2" id="otherRadio" name="tab" value="other">
+              <label for="otherRadio" class="option-2 option">Other</label>
             </nav>
           </div>
           <section class="left-card card-1">
@@ -127,8 +130,38 @@
               Read More
               <i class="fa-solid fa-arrow-left arrow-left"> </i>
             </a>
-          </section>         
-        </div>
+          </section>
+          <section class="left-card card-3">
+            <h3>Project-3</h3>
+            <h2>Web-Based Calculator</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Eros volutpat vitae tristique ac eu porttitor. Lacinia eleifend sagittis blandit amet ornare mauris velit malesuada sodales. Est scelerisque turpis eleifend enim. Aliquam sed ac justo velit. Non morbi ullamcorper viverra eu orci nec lorem. Id aliquam eget blandit eget. At sit in bibendum odio etiam. Turpis feugiat consequat fusce aliquet ac.
+            </p>
+            <figure>
+              <img src="assets/img/Picture-1.svg" alt="Link Tree Direction Thumbnail">
+              <div class="border"></div>
+            </figure>
+            <a href="" class="button-card-left">
+              <i class="fa-solid fa-arrow-right arrow-right"> </i>
+              Read More
+            </a>
+          </section>
+          <section class="right-card card-4">
+            <h3>Project-4</h3>
+            <h2>Admin Panel Dashboard</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Eros volutpat vitae tristique ac eu porttitor. Lacinia eleifend sagittis blandit amet ornare mauris velit malesuada sodales. Est scelerisque turpis eleifend enim. Aliquam sed ac justo velit. Non morbi ullamcorper viverra eu orci nec lorem. Id aliquam eget blandit eget. At sit in bibendum odio etiam. Turpis feugiat consequat fusce aliquet ac.
+            </p>
+            <figure>
+              <img src="assets/img/Picture-1.svg" alt="Link Tree Direction Thumbnail">
+              <div class="border"></div>
+            </figure>
+            <a href="" class="button-card-right">
+              Read More
+              <i class="fa-solid fa-arrow-left arrow-left"> </i>
+            </a>
+          </section>
+        </article>
       </main>
       <script src="js/index.js"></script>
   </body>
