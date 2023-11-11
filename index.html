@@ -3,27 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amuba Notes | Portfolio Website</title>
+    <title>AmubaCraft | Home</title>
     <link rel="stylesheet" href="css/style.css" />
     <!-- Fonts from fonts.google.com -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Coda:wght@400;800&family=Montserrat&family=Permanent+Marker&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/img/icon/code-bracket.svg">
-    <!-- ! Font Awesome Embed Script -->
+    <link rel="icon" href="assets/img/icon/brand.svg">
     <script src="https://kit.fontawesome.com/fd0661f57d.js" crossorigin="anonymous"></script>
   </head>
   <body>
       <header class="landing">
         <nav class="landing-header" id="landing-header">
-          <!-- Navigation Bar -->
-          <a href="#main">
-            <h2 class="landing-header__logo">Amuba Notes.</h2>
+          <a href="#main" class="landing-header__logo">
+            <img src="assets/img/icon/brand.svg" alt="Amuba Logo">
           </a>
           <nav class="landing-header__right-container">
             <a href="#main" class="landing-header__link landing-header__ButtonLink Home">Home</a>
             <a href="#portfolio" class="landing-header__link landing-header__ButtonLink Portfolio ">Portfolio</a>
-            <a href="#experience" class="landing-header__link landing-header__ButtonLink Experience">Experience</a>
             <a href="#about" class="landing-header__link landing-header__ButtonLink About">About</a>
           </nav>
         </nav>
@@ -73,16 +70,14 @@
           </div>
         </aside>
         <article class="introduction">
+          <div class="element-1"><img src="assets/img/Element-1.svg" alt="PC-1"></div>
           <h3>Hello, My Name is</h3>
           <h2>Ahmat Framuja</h2>
           <section class="job">
             <h1>I'M FULL-STACK WEB DEVELOPER</h1>
           </section>
+          <div class="break-1"></div>
         </article>
-        
-        <div class="break-1"></div>
-        <div class="element-1"><img src="assets/img/Element-1.svg" alt="PC-1"></div>
-
         <div class="learn-more">
           <a href="#portfolio" class="__next-1">
             Learn More
@@ -161,8 +156,49 @@
               <i class="fa-solid fa-arrow-left arrow-left"> </i>
             </a>
           </section>
+          <div class="carrousels">
+            <div class="bullet">
+              <div class="selected-bullet"></div>
+            </div>
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+          </div>
         </article>
+
+        <aside class="profileCard" id="about">
+          <img src="assets/img/ProfileCardBanner.png" alt="Profile Banner" class="profile-banner">
+          <section class="profile-wrapper">
+            <img src="assets/img/ProfilePicture.png" alt="Profile Picture" class="profile-picture">
+            <h1 class="name">Ahmat Framuja</h1>
+            <h4 class="occupations">Web Developer | Student</h4>
+          </section>
+          <section class="content-wrappers">
+            <h2 class="content-head">About</h2>
+            <div class="line-break"></div>
+            <p class="content-desc-1">
+              My name is Ahmat Framuja, and my nickname online is Amubacraft. I am a full-stack web developer who works independently, and I also have one year of experience as a UI/UX designer. I use Linux distributions on my desktop, such as MX Linux, Fedora, Debian, Arch Linux, and several other Linux distributions.
+            </p>
+            <p class="content-desc-2">
+              I work the hours I want and where I have free time, such as night or morning. Of course, I will work if I have an internet connection. I’m always looking for new challenges, so if you have any projects that you think I would be a good fit for, please don't hesitate to contact me.
+            </p>
+          </section>
+          <menu class="profile-tabs">
+            <a href="#">About</a>
+            <a href="#">Experience</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+          </menu>
+        </aside>
       </main>
+      <footer>
+        <img src="assets/img/icon/brand.svg" alt="Amuba Logo">
+        <p class="copyright">
+          This web made with ❤️ by <span>@AmubaCraft - Ahmat Framuja </span><br>
+          <span>©2023 AmubaCraft - amubacraft.my.id</span><br>
+          <span>All rights reserved.</span>
+        </p>
+        <div class="box"></div>
+      </footer>
       <script src="js/index.js"></script>
   </body>
 </html>
