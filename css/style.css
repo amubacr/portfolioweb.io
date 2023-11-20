@@ -266,7 +266,7 @@ a {
 
 .introduction h3 {
   font-family: 'Coda';
-  font-size: 40px;
+  font-size: 2.5em;
   font-style: normal;
   line-height: 134%;
   letter-spacing: 2%;
@@ -280,7 +280,7 @@ a {
 
 .introduction h2 {
   font-family: 'Coda';
-  font-size: 55px;
+  font-size: 3.4375em;
   font-style: normal;
   font-weight: 800;
   line-height: 134%;
@@ -296,7 +296,7 @@ a {
 .job {
   text-align: center;
   font-family: 'Changa One';
-  font-size: 45px;
+  font-size: 2.8125em;
   letter-spacing: 0.45px;
 
   width: fit-content;
@@ -445,7 +445,7 @@ a {
 .__next-1 {
   font-family: 'Poppins';
   font-weight: 600;
-  font-size: 23px;
+  font-size: 1.4375em;
   text-align: center;
   color: #EDEEC0;
   margin-bottom: 5px;
@@ -981,12 +981,18 @@ footer img {
   font: normal normal 600 1em/normal 'Roboto Mono', sans-serif;
 }
 
-/* ! Media Query: Mobile Responsive */
+/* ! Media Query: Tablet / Mobile View */
 @media screen and (max-width: 650px) {
   body {
     width: 100%;
     height: 100%;
+    background-color: var(--secondary-color);
     overflow-x: hidden;
+  }
+
+  .main-page {
+    width: 100%;
+    height: calc(100vh - var(--navigation-height-s));
   }
 
   .landing-header {
@@ -1086,7 +1092,7 @@ footer img {
   }
 
   .learn-more {
-    right: 36%;
+    right: 37%;
     z-index: 1;
   }
 
@@ -1312,5 +1318,116 @@ footer img {
   .copyright {
     font-size: 0.8em;
     right: 3%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+  }
+
+  .landing-header {
+    width: 100%;
+    height: var(--navigation-height-s);
+    padding: 1rem 2rem 1rem 2.5rem;
+  }
+
+  .main-page {
+    width: 100%;
+    height: calc(100vh - var(--navigation-height-s));
+  }
+
+  .introduction {
+    width: 100%;
+  }
+
+  .introduction h3 {
+    left: 33%;
+    font-size: 1.8em;
+  }
+
+  .introduction h2 {
+    font-size: 2em;
+    width: 300px;
+    left: 27%;
+  }
+
+  .element-1 img{
+    left: 0;
+  }
+
+  .job {
+    font-size: 1.3em;
+    bottom: 30px;
+    left: 77px;
+  }
+
+  .break-1 {
+    width: 340px;
+    bottom: 40px;
+    left: 75.5px;
+  }
+
+  .learn-more {
+    width: 200px;
+    left: 165px;
+  }
+
+  .__next-1 {
+    font-size: 1.3em;
+    align-items: center;
+  }
+
+  .arrow-down {
+    right: 37%;
+  }
+
+  .portfolio {
+    top: 140vh;
+    width: 119.5%;
+  }
+
+  .left-card, .right-card {
+    width: 90%;
+    padding: 1.85rem;
+  }
+
+  .left-card h2, .right-card h2 {
+    font-size: 1.2em;
+  }
+
+  .left-card p, .right-card p {
+    font-size: 0.58em;
+    width: 83%;
+    transform: translate(0px, 5px);
+  }
+
+  .portfolio figure .m-img {
+    object-fit: cover;
+  }
+
+  .button-card-left, .button-card-right {
+    width: 85%;
+    font-size: 1em;
+  }
+
+  .profileCard {
+    width: 110%;
+    top: 655vh;
+  }
+
+  .profile-picture {
+    left: 24%;
+  }
+
+  footer {
+    width: 120%;
+  }
+
+  .copyright {
+    font-size: 0.68em;
   }
 }
