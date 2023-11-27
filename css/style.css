@@ -152,6 +152,7 @@ table {
 
 * {
   box-sizing: border-box;
+  transition: all 200ms linear;
 }
 
 html {
@@ -331,6 +332,8 @@ a {
 
 .element-1 {
   width: 500px;
+  position: relative;
+  z-index: 1;
 }
 
 .element-1 img {
@@ -1322,7 +1325,7 @@ footer img {
 }
 
 @media screen and (max-width: 425px) {
-  body {
+  body, html {
     width: 100%;
     height: 100%;
     background-color: var(--secondary-color);
@@ -1352,7 +1355,7 @@ footer img {
   .introduction h2 {
     font-size: 2em;
     width: 300px;
-    left: 27%;
+    left: 28%;
   }
 
   .element-1 img{
@@ -1433,9 +1436,13 @@ footer img {
 }
 
 @media screen and (max-width: 375px) {
-  body {
+  body, html {
     width: 100%;
     height: 100%;
+  }
+
+  .landing-header {
+    padding: 1rem 1rem 1rem 5rem;
   }
 
   .introduction {
@@ -1443,12 +1450,13 @@ footer img {
     height: calc(100vh - var(--navigation-height-s));
   }
 
-  .introduction h3, .introduction h2 {
-    left: 120px;
+  .introduction h2 {
+    left: 150px;
   }
 
   .introduction h3 {
-    left: 140px;
+    left: 170px;
+    width: 250px;
   }
 
   .job {
@@ -1460,18 +1468,80 @@ footer img {
   }
 
   .job, .break-1 {
-    left: 80px;
+    left: 110px;
+  }
+
+  .learn-more {
+    left: 190px;
   }
 
   .portfolio {
-    width: 136vw;
+    width: 159vw;
   }
 
   .profileCard {
-    width: 125vw;
+    width: 148vw;
   }
 
   footer {
-    width: 136vw;
+    width: 159vw;
+  }
+}
+
+@media screen and (max-width: 320px){
+  body, html {
+    width: 100%;
+    height: 100%;
+  }
+
+  .landing-header {
+    padding: 1rem 1rem 1rem 4rem;
+  }
+
+  .introduction {
+    width: 140%;
+    min-height: calc(100vh - var(--navigation-height-s));
+  }
+
+  .introduction h3 {
+    font-size: 1.6em;
+    left: 175px;
+    width: 250px;
+  }
+
+  .introduction h2 {
+    left: 140px;
+    font-size: 2em;
+  }
+
+  .element-1 {
+    /* position: relative; */
+    z-index: 1;
+  }
+
+  .job {
+    left: 120px;
+    font-size: 1.1em;
+  }
+
+  .break-1 {
+    left: 118px;
+    width: 290px;
+  }
+
+  .learn-more {
+  left: 185px;
+  }
+
+  .portfolio {
+    width: 167%;
+  }
+
+  .profileCard {
+    width: 157%;
+  }
+
+  footer {
+    width: 167%;
   }
 }
