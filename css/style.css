@@ -1431,3 +1431,47 @@ footer img {
     font-size: 0.68em;
   }
 }
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .introduction {
+    width: 100%;
+    height: calc(100vh - var(--navigation-height-s));
+  }
+
+  .introduction h3, .introduction h2 {
+    left: 120px;
+  }
+
+  .introduction h3 {
+    left: 140px;
+  }
+
+  .job {
+    top: 0;
+  }
+
+  .break-1 {
+    top: -10px;
+  }
+
+  .job, .break-1 {
+    left: 80px;
+  }
+
+  .portfolio {
+    width: 136vw;
+  }
+
+  .profileCard {
+    width: 125vw;
+  }
+
+  footer {
+    width: 136vw;
+  }
+}
