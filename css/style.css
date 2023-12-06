@@ -644,7 +644,7 @@ a {
 
 .left-card h2 {
   font-family: 'Montserrat';
-  font-size: 43px;
+  font-size: 2.3em;
   color: white;
   font-weight: 700;
 
@@ -669,7 +669,7 @@ a {
 }
 
 .left-card p {
-  font: normal normal 400 20px/30px 'Roboto Mono';
+  font: normal normal 400 19px/30px 'Roboto Mono';
   text-align: left;
   color: white;
 
@@ -681,7 +681,7 @@ a {
 }
 
 .right-card p {
-  font: normal normal 400 20px/30px 'Roboto Mono';
+  font: normal normal 400 19px/30px 'Roboto Mono';
   text-align: end;
   color: white;
 
@@ -690,10 +690,6 @@ a {
   top: 140px;
 
   margin: 20px 0 20px 50px;
-}
-
-.m-img {
-  display: none;
 }
 
 .left-card figure img {
@@ -1258,17 +1254,14 @@ footer img {
     transform: translate(3px, 0px);
   }
   
-  .left-card figure .m-img {
+  .left-card figure img {
     display: block;
+    object-fit: cover;
     width: 96%;
     height: 250px;
 
     position: relative;
     left: 0;
-  }
-
-  .left-card figure img {
-    display: none;
   }
 
   .right-card {
@@ -1286,7 +1279,7 @@ footer img {
     font-size: 25px;
     width: 96%;
     left: 0;
-    top: 300px;
+    top: 270px;
     letter-spacing: 2px;
   }
 
@@ -1294,7 +1287,7 @@ footer img {
     font-size: 25px;
     width: 96%;
     left: 30px;
-    top: 340px;
+    top: 310px;
     letter-spacing: 2px;
   }
 
@@ -1302,7 +1295,7 @@ footer img {
     font-size: 13px;
     width: 90%;
     left: -18px;
-    top: 365px;
+    top: 340px;
     text-align: justify;
     line-height: 23px;
   }
@@ -1340,18 +1333,19 @@ footer img {
     scale: 1.1;
     transform: translate(3px, 0px);
   }
+
+  .right-card figure {
+    translate: 0px -25px;
+  }
   
-  .right-card figure .m-img {
+  .right-card figure img {
     display: block;
+    object-fit: cover;
     width: 96%;
     height: 250px;
 
     position: relative;
     left: 0;
-  }
-
-  .right-card figure img {
-    display: none;
   }
 
   .profileCard {
@@ -1494,13 +1488,11 @@ footer img {
   }
 
   .left-card p, .right-card p {
-    font-size: 0.58em;
+    font-size: .8em;
     width: 83%;
+    height: 25%;
+    overflow: auto;
     transform: translate(0px, 5px);
-  }
-
-  .portfolio figure .m-img {
-    object-fit: cover;
   }
 
   .button-card-left, .button-card-right {
@@ -1597,11 +1589,15 @@ footer img {
   }
 
   .left-card p {
-    font-size: .75em;
+    font-size: .8em;
+    overflow: auto;
+    height: 28%;
   }
 
   .right-card p {
-    font-size: .65em;
+    font-size: .8em;
+    overflow: auto;
+    height: 28%;
   }
 
   .profileCard {
@@ -1672,10 +1668,14 @@ footer img {
 
   .left-card p{
     font-size: .7em;
+    overflow: auto;
+    height: 25%;
   }
 
   .right-card p {
-    font-size: .6em;
+    font-size: .7em;
+    overflow: auto;
+    height: 25%;
   }
 
   .profileCard {
