@@ -18,19 +18,66 @@
           <a href="#main" class="landing-header__logo">
             <img src="assets/img/icon/brand.svg" alt="Amuba Logo">
           </a>
-          <nav class="landing-header__right-container">
+          <div class="landing-header__right-container">
             <a href="#main" class="landing-header__link landing-header__ButtonLink Home">Home</a>
             <a href="#portfolio" class="landing-header__link landing-header__ButtonLink Portfolio ">Portfolio</a>
             <a href="#about" class="landing-header__link landing-header__ButtonLink About">About</a>
-          </nav>
-          <nav class="landing-header__right-container-m">
-            <span></span>
-            <span></span>
-            <span></span>
-          </nav>
+          </div>
+          <a href="javascript:void(0)" class="menu-btn" onclick="openbtn()">
+            <div class="landing-header__right-container-m">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+          <div class="mobile-menu" id="mobile-menu">
+            <div class="menu-link">
+              <a href="javascript:void(0)" class="collapse-btn" onclick="collapsebtn()">&times;</a>
+              <a href="#main" class="landing-header__link landing-header__ButtonLink Home" onclick="collapsebtn()">Home</a>
+              <a href="#portfolio" class="landing-header__link landing-header__ButtonLink Portfolio" onclick="collapsebtn()">Portfolio</a>
+              <a href="#about" class="landing-header__link landing-header__ButtonLink About" onclick="collapsebtn()">About</a>
+            </div>
+            <div class="line"></div>
+            <div class="m-social-media">
+              <div class="social-media__link-m">
+                <div class="social-media__icon-m">
+                  <ul>
+                    <li class="icon">
+                      <a href="https://instagram.com/amubacraft._" target="_blank" class="__link-1">
+                        <i class="fa-brands fa-instagram fa-xl iconc instagram"></i>
+                      </a>
+                    </li>
+      
+                    <li class="icon">
+                      <a href="https://github.com/amubacr" target="_blank" class="__link-2">
+                        <i class="fa-brands fa-github fa-xl iconc github"></i>
+                      </a>
+                    </li>
+      
+                    <li class="icon">
+                      <a href="https://www.linkedin.com/in/ahmatframuja" target="_blank" class="__link-3">
+                        <i class="fa-brands fa-linkedin-in fa-xl iconc linkedin"></i>
+                      </a>
+                    </li>
+      
+                    <li class="icon">
+                      <a href="http://www.pinterest.com/amubacraft" target="_blank" class="__link-4">
+                        <i class="fa-brands fa-pinterest fa-xl iconc pinterest"></i>
+                      </a>
+                    </li>
+      
+                    <li class="icon">
+                      <a href="https://medium.com/@amubacraft" target="_blank" class="__link-5">
+                        <i class="fa-brands fa-medium fa-xl iconc medium"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
       </header>
-
       <main class="main-page" id="main">
         <aside class="social-media">
           <div class="text-wrapper label">Follow My Social Network</div>
@@ -89,7 +136,6 @@
             <i class="fa-solid fa-sort-down fa-2xl arrow-down"></i>
           </a>
         </div>
-
         <article class="portfolio" id="portfolio">
           <div class="title-section">
             <h2>Portfolio</h2>
@@ -173,7 +219,6 @@
             <div class="bullet"></div>
           </div>
         </article>
-
         <aside class="profileCard" id="about">
           <img src="assets/img/ProfileCardBanner.png" alt="Profile Banner" class="profile-banner">
           <section class="profile-wrapper">
