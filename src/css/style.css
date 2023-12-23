@@ -18,6 +18,7 @@
   --second-blue-color: rgba(11, 24, 50, 1);
   --third-blue-color: rgba(4, 27, 67, 1);
   --fourth-blue-color: rgba(14, 34, 73, 1);
+  --fifth-blue-color: rgba(45, 76, 116, 1);
   --white-color-1: rgba(237,237,192, 1);
   --white-color-2: rgba(255, 255, 255, 1);
 
@@ -104,11 +105,7 @@ header .icons .icon {
   margin: 2rem;
 }
 
-header .icons .instagram {
-  color: var(--white-color-1);
-}
-
-header .icons .github {
+header .icons .icon {
   color: var(--white-color-1);
 }
 
@@ -118,6 +115,115 @@ header .icons .instagram:hover {
 
 header .icons .github:hover {
   color: #949494;
+}
+
+header .icons .linkedin:hover {
+  color: #054db9;
+}
+
+.first-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-1 {
+  padding: 2rem;
+  margin-top: 10rem;
+  margin-left: 3rem;
+}
+
+.image-1 img {
+  height: 40rem;
+}
+
+.main-container-content {
+  display: block;
+  margin-top: 9rem;
+}
+
+.main-container-content h3 {
+  font-family: "Coda",sans-serif;
+  font-size: 2.7rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: var(--white-color-1);
+
+  margin-bottom: .652rem;
+}
+
+.main-container-content h2 {
+  font-family: "Coda",sans-serif;
+  font-size: 3.7rem;
+  color: var(--white-color-1);
+
+  margin-bottom: 2rem;
+}
+
+.occupation {
+  font-family: "Coda",sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding: .625rem .9375rem;
+
+  color: var(--white-color-1);
+  background: linear-gradient(180deg, rgb(146, 179.2, 229) 9.38%, rgb(31.41, 101.18, 175.31) 63.02%);
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  margin-right: 2rem;
+}
+
+.occupation-line {
+  background-color: var(--fifth-blue-color);
+  border-radius: 10px;
+  width: 45.5rem;
+  height: .5rem;
+}
+
+.learn-more {
+  align-self: flex-end;
+  position: relative;
+  right: 35%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.learn-more a {
+  font-size: 2rem;
+  font-family: "Poppins",sans-serif;
+  font-weight: 600;
+  color: var(--white-color-1);
+}
+
+.learn-more .arrow-down {
+  font-size: 3rem;
+  color: var(--white-color-1);
+}
+
+.learn-more .arrow-down,a:hover {
+  color: var(--white-color-2);
+}
+
+
+
+
+@media screen and (max-width: 1234px) {
+  .occupation {
+    width: 96%;
+    font-size: 2.3rem;
+  }
+  
+  .occupation-line {
+    width: 42rem;
+  }
+
+  .learn-more {
+    right: 46%;
+  }
+
+  .learn-more a {
+    display: inline-block;
+    width: max-content;
+  }
 }
 
 /* ! Tablet Responsive View Section */
@@ -210,6 +316,33 @@ header .icons .github:hover {
     color: var(--white-color-2);
     margin: 1rem;
   }
+
+  .image-1 img {
+    height: 33rem;
+  }
+
+  .occupation {
+    font-size: 2.03rem;
+    width: 37rem;
+  }
+
+  .occupation-line {
+    width: 37.5rem;
+  }
+
+  .learn-more {
+    right: 51.5%;
+  }
+
+  .learn-more a {
+    font-size: 1.7rem;
+    display: inline-block;
+    width: max-content;
+  }
+
+    .learn-more .arrow-down {
+      font-size: 2.5rem;
+    }
 }
 
 /* * 768px */
@@ -234,6 +367,36 @@ header .icons .github:hover {
     font-size: 1rem;
     margin: .5rem;
   }
+
+  .first-container {
+    flex-direction: column;
+  }
+
+  .main-container-content {
+    margin-top: -8rem;
+  }
+
+  .main-container-content h3,h2,.occupation {
+    text-align: center;
+  }
+
+  .image-1 {
+    margin-top: 0;
+    margin-right: 3rem;
+  }
+
+  .occupation,.occupation-line{
+    margin-left: 2rem;
+  }
+
+  .occupation-line {
+    margin-bottom: 1rem;
+  }
+
+  .learn-more {
+    right: 43%;
+  }
+
 }
 
 
