@@ -182,7 +182,7 @@ header .icons .linkedin:hover {
 .learn-more {
   align-self: flex-end;
   position: relative;
-  right: 35%;
+  right: 36.5%;
   text-align: center;
   cursor: pointer;
 }
@@ -376,6 +376,10 @@ header .icons .linkedin:hover {
     margin-top: -8rem;
   }
 
+  .main-container-content h2 {
+    margin-bottom: 0;
+  }
+
   .main-container-content h3,h2,.occupation {
     text-align: center;
   }
@@ -404,7 +408,7 @@ header .icons .linkedin:hover {
 /* * 425px View */
 @media screen and (max-width: 425px) {
   .brand {
-    margin: 0 0 0 4rem;
+    margin: 0 0 0 2.5rem;
   }
 
   .mobile-menu {
@@ -430,26 +434,115 @@ header .icons .linkedin:hover {
     font-size: var(--responsive-font-1);
     margin: 0 1.5rem;
   }
+
+  .image-1 {
+    margin-left: 2rem;
+  }
+
+  .image-1 img {
+    height: 29rem;
+  }
+
+  .main-container-content {
+    margin-bottom: 2rem;
+  }
+
+  .main-container-content h3 {
+    font-size: 2.3rem;
+    margin-right: 1rem;
+  }
+
+  .main-container-content h2 {
+    font-size: 3rem;
+    margin-right: .5rem;
+    margin-bottom: 0;
+  }
+
+  .main-container-content .occupation {
+    font-size: 1.6rem;
+    width: 30rem;
+    text-align: center;
+  }
+
+  .main-container-content .occupation-line {
+    width: 30.5rem;
+  }
+
+  .learn-more {
+    right: 39%;
+  }
+
 }
 
 /* * 375px View */
 @media screen and (max-width: 375px) {
   .brand {
-    margin: 0 0 0 4rem;
+    margin: 0 0 0 3rem;
   }
 
   .mobile-menu {
     left: 22vw;
+  }
+
+  .image-1 {
+    margin-left: 3rem;
+  }
+
+  .main-container-content {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-container-content h2 {
+    margin-bottom: 0;
+  }
+
+  .learn-more {
+    right: 34.5%;
   }
 }
 
 /* * 320px View */
 @media screen and (max-width: 320px) {
   .brand {
-    margin: 0 0 0 4rem;
+    margin: 0 0 0 3rem;
   }
 
   .mobile-menu {
     left: 18vw;
+  }
+
+  .image-1 {
+    margin-left: 6rem;
+  }
+
+  .image-1 img {
+    height: 28rem;
+  }
+
+  .main-container-content {
+    margin-left: 3.5rem;
+  }
+
+  .main-container-content h3 {
+    font-size: 2rem;
+  }
+
+  .main-container-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 0;
+  }
+
+  .main-container-content .occupation {
+    width: 28rem;
+    font-size: 1.5rem;
+  }
+
+  .main-container-content .occupation-line {
+    width: 28.5rem;
+  }
+
+  .learn-more {
+    right: 27%;
   }
 }
