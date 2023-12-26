@@ -67,8 +67,10 @@
         Portfolio
       </h2>
       <div class="switch-btn">
-        <a href="javascript:void(0)" class="switch on" id="switch-1">Website</a>
-        <a href="javascript:void(0)" class="switch" id="switch-2">Design</a>
+        <input type="radio" name="switch" class="switch" id="switch-1" checked>
+        <label for="switch-1" class="switch-1">Website</label>
+        <input type="radio" name="switch" class="switch" id="switch-2">
+        <label for="switch-2" class="switch-2">Design</label>
       </div>
       <!-- ! Card Section -->
       <section class="portfolio-card card-1">
@@ -87,6 +89,49 @@
           </button>
         </div>
       </section>
+      <section class="portfolio-card card-2">
+        <figure>
+          <img src="assets/img/project-2.webp" alt="Project-2">
+        </figure>
+        <div class="project-content">
+          <h2>Project - 2</h2>
+          <h1>Link Direction Website</h1>
+          <p class="project-description">
+            Link direct website is a valuable resource for anyone looking for a simple and effective way to showcase their social media links and contact information. It offers a variety of features that make it stand out from other Linktree clones. Some of the unique features of this website include the ability to connect with multiple social media platforms, and the availability of free customization and open source.
+          </p>
+          <button class="read-more-btn">
+            <i class="fa-solid fa-arrow-right fa-xl"></i>
+            Read More
+          </button>
+        </div>
+      </section>
+      <section class="portfolio-card card-3">
+        <figure>
+          <img src="assets/img/project-3.webp" alt="Project-3">
+        </figure>
+        <div class="project-content">
+          <h2>Project - 3</h2>
+          <h1>Web-Based Calculator</h1>
+          <p class="project-description">
+            The web-based calculator has a similar interface to the calculator on the Apple iOS operating system, but with a wealth of features based on the calculator on Android. The feature include a standard calculator, scientific calculator for complex mathematical calculation, basic converter and currency converter, and binary calculator for binary calculations. This calculator is easy to use, and it is available in multiple languages.
+          </p>
+          <button class="read-more-btn">
+            <i class="fa-solid fa-arrow-right fa-xl"></i>
+            Read More
+          </button>
+        </div>
+      </section>
+      <!-- ! Pagination Section -->
+      <div class="pagination-container">
+        <button><i class="fa-solid fa-angle-left fa-xl"></i></button>
+        <input type="radio" name="option" id="first-btn" checked>
+        <label for="first-btn" class="option">1</label>
+        <input type="radio" name="option" id="second-btn">
+        <label for="second-btn" class="option">2</label>
+        <input type="radio" name="option" id="third-btn">
+        <label for="third-btn" class="option">3</label>
+        <button><i class="fa-solid fa-angle-right fa-xl"></i></button>
+      </div>
     </div>
   </main>
   <footer>

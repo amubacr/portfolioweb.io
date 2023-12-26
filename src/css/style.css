@@ -222,27 +222,42 @@ header .icons .linkedin:hover {
 }
 
 .switch-btn {
+  padding: 1rem 0;
+}
+
+.switch-btn input[type="radio"] {
+  width: 0;
+  opacity: 0;
+}
+
+.switch-btn input[type="radio"]:focus+label {
+  border: 1px solid var(--white-color-2);
+}
+
+.switch-btn input[type="radio"]:checked+label {
   background-color: var(--fourth-blue-color);
-  padding: .6rem 0;
-  /* margin-bottom: 3.125rem; */
 }
 
-.switch-btn a {
-  color: var(--white-color-1);
-  font-size: 1.4375rem;
-  font-weight: 600;
+.switch-1 {
+  right: .3rem;
+}
+
+.switch-2 {
+  width: 100px;
+  right: .8rem;
+}
+
+.switch-btn label {
+  position: relative;
+  font-size: 1.3rem;
   font-family: "Poppins",Helvetica;
-  padding: .7rem 2.8rem;
-  margin: 0 -.3rem;
-}
-
-.switch-btn a:hover {
+  font-weight: 700;
   color: var(--white-color-2);
-  background-color: var(--third-blue-color);
+  padding: 1.1rem 2.5rem;
 }
 
-.switch-btn a.on {
-  background-color: var(--third-blue-color);
+.switch-btn label:hover {
+  background-color: var(--fourth-blue-color);
 }
 
 .portfolio-card {
@@ -310,8 +325,49 @@ header .icons .linkedin:hover {
   border: 2px solid var(--white-color-1),10%;
 }
 
-.card-1  {
+.card-1,.card-2,.card-3  {
   background: linear-gradient(180deg, rgb(5.64, 36.5, 96.69) 0%, rgb(11.86, 28.37, 60.56) 100%);
+}
+
+.portfolio-container .pagination-container button {
+  font-size: 1.5rem;
+  margin-left: .6rem;
+  padding: 1rem 1.3rem;
+  background-color: var(--fifth-blue-color);
+  border-radius: 8px;
+  border: 2px solid var(--white-color-2),10%;
+}
+
+.portfolio-container .pagination-container button:hover {
+  background-color: var(--fourth-blue-color);
+}
+
+.portfolio-container .pagination-container input[type="radio"] {
+  width: 0;
+  opacity: 0;
+}
+
+.portfolio-container .pagination-container input[type="radio"]:focus+label {
+  border: .1rem solid var(--white-color-2);
+}
+
+.portfolio-container .pagination-container input[type="radio"]:checked+label {
+  background-color: var(--fourth-blue-color);
+}
+
+.portfolio-container .pagination-container label {
+  padding: 1rem 1.5rem;
+  margin-left: .6rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-family: "Poppins",Helvetica;
+  font-weight: 600;
+  color: var(--white-color-2);
+  background-color: var(--fifth-blue-color);
+}
+
+.portfolio-container .pagination-container label:hover {
+  background-color: var(--fourth-blue-color);
 }
 
 @media screen and (max-width: 1234px) {
