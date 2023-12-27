@@ -123,13 +123,18 @@ header .icons .linkedin:hover {
 
 .first-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.main-page {
+  display: flex;
+  margin-top: 3rem;
 }
 
 .image-1 {
   padding: 2rem;
-  margin-top: 10rem;
-  margin-left: 3rem;
+  margin: 1.5rem;
 }
 
 .image-1 img {
@@ -138,7 +143,7 @@ header .icons .linkedin:hover {
 
 .main-container-content {
   display: block;
-  margin-top: 9rem;
+  margin-top: 14rem;
 }
 
 .main-container-content h3 {
@@ -173,6 +178,7 @@ header .icons .linkedin:hover {
 }
 
 .occupation-line {
+  position: relative;
   background-color: var(--fifth-blue-color);
   border-radius: 10px;
   width: 45.5rem;
@@ -180,9 +186,6 @@ header .icons .linkedin:hover {
 }
 
 .learn-more {
-  align-self: flex-end;
-  position: relative;
-  right: 36.5%;
   text-align: center;
   cursor: pointer;
   margin-bottom: 2rem;
@@ -481,6 +484,10 @@ header .icons .linkedin:hover {
     margin: 1rem;
   }
 
+  .main-container-content {
+    margin-top: 11rem;
+  }
+
   .image-1 img {
     height: 33rem;
   }
@@ -494,19 +501,19 @@ header .icons .linkedin:hover {
     width: 37.5rem;
   }
 
-  .learn-more {
-    right: 51.5%;
-  }
-
   .learn-more a {
     font-size: 1.7rem;
     display: inline-block;
-    width: max-content;
+    width: fit-content;
   }
 
-    .learn-more .arrow-down {
-      font-size: 2.5rem;
-    }
+  .learn-more .arrow-down {
+    font-size: 2.5rem;
+  }
+
+  .portfolio-card {
+    width: 95%;
+  }
 }
 
 /* * 768px */
@@ -536,6 +543,10 @@ header .icons .linkedin:hover {
     flex-direction: column;
   }
 
+  .main-page {
+    flex-direction: column;
+  }
+
   .main-container-content {
     margin-top: -8rem;
   }
@@ -546,6 +557,10 @@ header .icons .linkedin:hover {
 
   .main-container-content h3,h2,.occupation {
     text-align: center;
+  }
+
+  .main-container-content .occupation {
+    position: relative;
   }
 
   .image-1 {
@@ -565,6 +580,30 @@ header .icons .linkedin:hover {
     right: 43%;
   }
 
+  .portfolio-card {
+    width: 100%;
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .portfolio-card figure img {
+    width: 100%;
+  }
+
+  .portfolio-card .project-content {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .portfolio-card .project-content h1 {
+    margin-bottom: 1rem;
+  }
+
+  .portfolio-card .project-content button {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
 }
 
 
@@ -607,33 +646,57 @@ header .icons .linkedin:hover {
     height: 29rem;
   }
 
+  .main-page {
+    align-items: center;
+  }
+
   .main-container-content {
     margin-bottom: 2rem;
   }
 
   .main-container-content h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-right: 1rem;
   }
 
   .main-container-content h2 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin-right: .5rem;
     margin-bottom: 0;
   }
 
   .main-container-content .occupation {
-    font-size: 1.6rem;
-    width: 30rem;
+    font-size: 1.2rem;
+    width: 27rem;
     text-align: center;
   }
 
   .main-container-content .occupation-line {
-    width: 30.5rem;
+    width: 27.5rem;
   }
 
-  .learn-more {
-    right: 39%;
+  .portfolio-card {
+    width: 92vw;
+  }
+
+  .portfolio-card .project-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-card .project-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .portfolio-card .project-content p {
+    font-size: 1.1rem;
+  }
+
+  .portfolio-container .pagination-container button {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-container .pagination-container label {
+    font-size: 1.2rem;
   }
 
 }
@@ -652,6 +715,10 @@ header .icons .linkedin:hover {
     margin-left: 3rem;
   }
 
+  .image-1 img {
+    height: 25rem;
+  }
+
   .main-container-content {
     margin-left: 1rem;
     margin-bottom: 2rem;
@@ -661,13 +728,23 @@ header .icons .linkedin:hover {
     margin-bottom: 0;
   }
 
-  .learn-more {
-    right: 34.5%;
+  .portfolio-container .pagination-container button {
+    font-size: 1rem;
+    margin-left: .2rem;
+  }
+
+  .portfolio-container .pagination-container label {
+    font-size: 1rem;
+    margin-left: .2rem;
   }
 }
 
 /* * 320px View */
 @media screen and (max-width: 320px) {
+  body {
+    width: 145vw;
+  }
+
   .brand {
     margin: 0 0 0 3rem;
   }
@@ -676,37 +753,53 @@ header .icons .linkedin:hover {
     left: 18vw;
   }
 
-  .image-1 {
-    margin-left: 6rem;
+  .image-1 img {
+    height: 35rem;
   }
 
-  .image-1 img {
-    height: 28rem;
+  .first-container {
+    align-items: center;
+  }
+
+  .main-page {
+    align-items: center;
   }
 
   .main-container-content {
-    margin-left: 3.5rem;
+    margin-left: 0;
   }
 
   .main-container-content h3 {
     font-size: 2rem;
+    margin-right: 0;
   }
 
   .main-container-content h2 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     margin-bottom: 0;
+    margin-right: 0;
   }
 
   .main-container-content .occupation {
-    width: 28rem;
-    font-size: 1.5rem;
+    width: 30rem;
+    font-size: 1.6rem;
+    margin-left: 1.4rem;
   }
 
   .main-container-content .occupation-line {
-    width: 28.5rem;
+    width: 30.5rem;
+    margin-left: 1.4rem;
   }
 
-  .learn-more {
-    right: 27%;
+  .learn-more a {
+    font-size: 1.3rem;
+  }
+
+  .portfolio-container .switch-btn {
+    position: relative;
+  }
+
+  .portfolio-card {
+    width: 135vw;
   }
 }
