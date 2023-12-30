@@ -11,6 +11,14 @@
   transition: .2s linear;
 }
 
+a,button {
+  cursor: url('../../assets/img/cursor/pointing_hand.ico'), pointer;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  cursor: url('../../assets/img/cursor/Text.png'), text;
+}
+
 /* ! Main Code */
 :root {
   /* * Color */
@@ -37,10 +45,10 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 9rem;
+  cursor: url('../../assets/img/cursor/left_ptr.png'), auto;
 }
 
 body {
-  /* min-height: 100vh; */
   background-color: var(--first-blue-color);
 }
 
@@ -66,7 +74,6 @@ header {
   align-items: center;
   padding: .4375rem .625rem;
   margin-left: 3.125rem;
-  /* gap: 4.375rem; */
 }
 
 .main-nav a {
@@ -153,7 +160,8 @@ header .icons .linkedin:hover {
   text-transform: capitalize;
   color: var(--white-color-1);
 
-  margin-bottom: .652rem;
+  margin-bottom: -1rem;
+  margin-top: 2rem;
 }
 
 .main-container-content h2 {
@@ -371,6 +379,118 @@ header .icons .linkedin:hover {
 
 .portfolio-container .pagination-container label:hover {
   background-color: var(--fourth-blue-color);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 55vw;
+  background: linear-gradient(180deg, rgb(0.64, 11.17, 38.25) 0%, rgb(1.14, 26.41, 91.37) 100%);
+  border: 1px solid #7ba4dab2;
+  border-radius: 0px 0px 15px 15px;
+  margin-bottom: 6.25rem;
+}
+
+.about-card .about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.about-card .about-header .profile-picture {
+  position: absolute;
+  z-index: 1;
+
+  margin-top: 4rem;
+}
+
+.about-card .about-header .profile-picture img {
+  height: 18rem;
+}
+
+.about-card .about-header .profile-banner {
+  width: 100%;
+  filter: blur(5px);
+}
+
+.about-card .about-header .profile-banner img {
+  width: 100%;
+  height: 20%;
+}
+
+.about-card .about-header h1,h3 {
+  position: relative;
+  bottom: 2rem;
+}
+
+.about-card .about-header h1 {
+  font-family: 'Montserrat',Helvetica;
+  font-weight: 700;
+  font-size: 2.1875rem;
+  margin-bottom: .5rem;
+}
+
+.about-card .about-header h3 {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  letter-spacing: .1rem;
+  color: var(--white-color-2);
+  margin-bottom: 1rem;
+}
+
+.about-card .about-contents {
+  margin-top: -3rem;
+  padding: 2.25rem;
+}
+
+.about-card .about-contents .content-header {
+  display: inline-block;
+  font-family: 'Montserrat',Helvetica;
+  font-weight: 600;
+  font-size: 1.875rem;
+  color: var(--white-color-2);
+  border-bottom: 2px solid rgba(143, 184, 237, 1);
+
+  margin-bottom: 1.25rem;
+  padding-bottom: .6rem;
+}
+
+.about-card .about-contents p {
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  text-align: justify;
+}
+
+.about-card .about-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.about-card .about-menu a {
+  font-family: 'Poppins',Helvetica;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--white-color-2);
+}
+
+.about-card .about-menu a:hover {
+  padding-bottom: .2rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--white-color-2);
 }
 
 @media screen and (max-width: 1234px) {
@@ -611,7 +731,7 @@ header .icons .linkedin:hover {
 /* * 425px View */
 @media screen and (max-width: 425px) {
   .brand {
-    margin: 0 0 0 2.5rem;
+    margin-left: 1.8rem;
   }
 
   .mobile-menu {
@@ -620,7 +740,7 @@ header .icons .linkedin:hover {
 
   .mobile-nav {
     width: 100%;
-    background-color: rgba(11, 24, 50, .5);;
+    background-color: var(--fourth-blue-color);
   }
 
   .mobile-nav .mobile-links a {
@@ -704,11 +824,15 @@ header .icons .linkedin:hover {
 /* * 375px View */
 @media screen and (max-width: 375px) {
   .brand {
-    margin: 0 0 0 3rem;
+    margin-left: 2.8rem;
   }
 
   .mobile-menu {
     left: 22vw;
+  }
+
+  main {
+    margin-left: 2rem;
   }
 
   .image-1 {
@@ -746,15 +870,19 @@ header .icons .linkedin:hover {
   }
 
   .brand {
-    margin: 0 0 0 3rem;
+    margin: 0 -2rem 0 0;
   }
 
   .mobile-menu {
-    left: 18vw;
+    left: 40vw;
   }
 
   .image-1 img {
     height: 35rem;
+  }
+
+  main {
+    margin-left: 3rem;
   }
 
   .first-container {
