@@ -493,6 +493,58 @@ header .icons .linkedin:hover {
   border-bottom: 2px solid var(--white-color-2);
 }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: linear-gradient(180deg, rgb(10, 27, 58) 0%, rgba(0.64, 27.51, 76.5, 0.56) 100%);
+  padding: 1.5625rem;
+}
+
+footer .footer-brand {
+  padding: 1rem;
+}
+
+footer .footer-brand img {
+  height: 4.5rem;
+}
+
+footer .copyright {
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding: .5rem;
+  color: #ffffff98;
+}
+
+footer .copyright span {
+  font-weight: 500;
+  color: var(--white-color-2);
+}
+
+footer .footer-social-network {
+  margin-top: 1.5rem;
+}
+
+footer .footer-social-network a {
+  color: var(--white-color-2);
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+footer .footer-social-network .pinterest:hover {
+  color: #bb0303;
+}
+
+footer .footer-social-network .linkedin:hover {
+  color: #054db9;
+}
+
+footer .footer-social-network .twitter:hover {
+  color: #161616;
+}
+
 @media screen and (max-width: 1234px) {
   .occupation {
     width: 96%;
@@ -510,6 +562,14 @@ header .icons .linkedin:hover {
   .learn-more a {
     display: inline-block;
     width: max-content;
+  }
+
+  .about-card .about-header .profile-picture {
+    margin-top: 3rem;
+  }
+  
+  .about-card .about-header .profile-picture {
+    height: 14.5rem;
   }
 }
 
@@ -634,6 +694,15 @@ header .icons .linkedin:hover {
   .portfolio-card {
     width: 95%;
   }
+
+  .about-card .about-header .profile-picture {
+    margin-top: 2rem;
+  }
+
+  .about-card .about-header .profile-picture img {
+    height: 13rem;
+  }
+
 }
 
 /* * 768px */
@@ -724,6 +793,32 @@ header .icons .linkedin:hover {
     justify-content: center;
     font-size: 1.5rem;
   }
+
+  .about-card {
+    width: 70vw;
+  }
+
+  .about-card .about-header .profile-picture {
+    margin-top: 2rem;
+  }
+
+  .about-card .about-header .profile-picture img {
+    height: 13rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-social-network {
+    margin-left: 1.5rem;
+  }
+
+  footer .footer-social-network a {
+    margin-right: 2rem;
+  }
+
 }
 
 
@@ -819,6 +914,42 @@ header .icons .linkedin:hover {
     font-size: 1.2rem;
   }
 
+  .about-card{
+    width: 85vw;
+  }
+
+  .about-card .about-header .profile-picture {
+    margin-top: 1.7rem;
+  }
+
+  .about-card .about-header .profile-picture img {
+    height: 11rem;
+  }
+
+  .about-card .about-header .profile-banner img {
+    height: 180px;
+  }
+
+  .about-card .about-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-card .about-header h3 {
+    font-size: .9rem;
+  }
+
+  .about-card .about-contents .content-header {
+    font-size: 1.5rem;
+  }
+
+  .about-card .about-contents p {
+    font-size: 1.05rem;
+  }
+
+  .about-card .about-menu a {
+    font-size: 1.25rem;
+  }
+
 }
 
 /* * 375px View */
@@ -860,6 +991,43 @@ header .icons .linkedin:hover {
   .portfolio-container .pagination-container label {
     font-size: 1rem;
     margin-left: .2rem;
+  }
+
+  .about-card {
+    width: 90vw;
+  }
+
+  .about-card .about-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-card .about-header h3 {
+    font-size: .7rem;
+  }
+
+  .about-card .about-contents .content-header {
+    font-size: 1.45rem;
+  }
+
+  .about-card .about-contents p {
+    font-size: 1rem;
+  }
+
+  .about-card .about-menu a {
+    font-size: 1.15rem;
+  }
+
+  footer .footer-brand {
+    margin-left: 1.3rem;
+  }
+
+  footer .copyright {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+
+  footer .footer-social-network {
+    margin-left: 2.5rem;
   }
 }
 
@@ -929,5 +1097,9 @@ header .icons .linkedin:hover {
 
   .portfolio-card {
     width: 135vw;
+  }
+
+  .about-card {
+    width: 125vw;
   }
 }
