@@ -1,254 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AmubaCraft | Home</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Fonts from fonts.google.com -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Coda:wght@400;800&family=Montserrat&family=Permanent+Marker&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/img/icon/brand.svg">
-    <script src="https://kit.fontawesome.com/fd0661f57d.js" crossorigin="anonymous"></script>
-  </head>
-  <body style="overflow: initial;">
-      <header class="landing">
-        <nav class="landing-header" id="landing-header">
-          <a href="#main" class="landing-header__logo">
-            <img src="assets/img/icon/brand.svg" alt="Amuba Logo">
-          </a>
-          <div class="landing-header__right-container">
-            <a href="#main" class="landing-header__link landing-header__ButtonLink Home">Home</a>
-            <a href="#portfolio" class="landing-header__link landing-header__ButtonLink Portfolio ">Portfolio</a>
-            <a href="#about" class="landing-header__link landing-header__ButtonLink About">About</a>
-          </div>
-          <a href="javascript:void(0)" class="menu-btn" onclick="openbtn()">
-            <div class="landing-header__right-container-m">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </a>
-          <div class="mobile-menu" id="mobile-menu">
-            <div class="menu-link">
-              <a href="javascript:void(0)" class="collapse-btn" onclick="collapsebtn()">&times;</a>
-              <a href="#main" class="landing-header__link landing-header__ButtonLink Home" onclick="collapsebtn()">Home</a>
-              <a href="#portfolio" class="landing-header__link landing-header__ButtonLink Portfolio" onclick="collapsebtn()">Portfolio</a>
-              <a href="#about" class="landing-header__link landing-header__ButtonLink About" onclick="collapsebtn()">About</a>
-            </div>
-            <div class="line"></div>
-            <div class="m-social-media">
-              <div class="social-media__link-m">
-                <div class="social-media__icon-m">
-                  <ul>
-                    <li class="icon">
-                      <a href="https://instagram.com/amubacraft._" target="_blank" class="__link-1">
-                        <i class="fa-brands fa-instagram fa-xl iconc instagram"></i>
-                      </a>
-                    </li>
-      
-                    <li class="icon">
-                      <a href="https://github.com/amubacr" target="_blank" class="__link-2">
-                        <i class="fa-brands fa-github fa-xl iconc github"></i>
-                      </a>
-                    </li>
-      
-                    <li class="icon">
-                      <a href="https://www.linkedin.com/in/ahmatframuja" target="_blank" class="__link-3">
-                        <i class="fa-brands fa-linkedin-in fa-xl iconc linkedin"></i>
-                      </a>
-                    </li>
-      
-                    <li class="icon">
-                      <a href="http://www.pinterest.com/amubacraft" target="_blank" class="__link-4">
-                        <i class="fa-brands fa-pinterest fa-xl iconc pinterest"></i>
-                      </a>
-                    </li>
-      
-                    <li class="icon">
-                      <a href="https://medium.com/@amubacraft" target="_blank" class="__link-5">
-                        <i class="fa-brands fa-medium fa-xl iconc medium"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <main class="main-page" id="main">
-        <aside class="social-media">
-          <div class="text-wrapper label">Follow My Social Network</div>
-          <div class="social-media__link">
-            <div class="break-line">
-              <div class="break-line__1"></div>
-              <div class="break-line__2"></div>
-            </div>
-            <nav class="social-media__icon">
-              <ul>
-                <li class="icon">
-                  <a href="https://instagram.com/amubacraft._" target="_blank" class="__link-1">
-                    <i class="fa-brands fa-instagram fa-xl iconc instagram"></i>
-                  </a>
-                </li>
-  
-                <li class="icon">
-                  <a href="https://github.com/amubacr" target="_blank" class="__link-2">
-                    <i class="fa-brands fa-github fa-xl iconc github"></i>
-                  </a>
-                </li>
-  
-                <li class="icon">
-                  <a href="https://www.linkedin.com/in/ahmatframuja" target="_blank" class="__link-3">
-                    <i class="fa-brands fa-linkedin-in fa-xl iconc linkedin"></i>
-                  </a>
-                </li>
-  
-                <li class="icon">
-                  <a href="http://www.pinterest.com/amubacraft" target="_blank" class="__link-4">
-                    <i class="fa-brands fa-pinterest fa-xl iconc pinterest"></i>
-                  </a>
-                </li>
-  
-                <li class="icon">
-                  <a href="https://medium.com/@amubacraft" target="_blank" class="__link-5">
-                    <i class="fa-brands fa-medium fa-xl iconc medium"></i>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </aside>
-        <article class="introduction">
-          <div class="element-1"><img src="assets/img/Element-1.svg" alt="PC-1"></div>
-          <h3>Hello, My Name is</h3>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AmubaCraft | Home</title>
+  <script src="https://kit.fontawesome.com/fd0661f57d.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="assets/img/icon/brand.svg">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <a href=""><img src="assets/img/icon/brand.svg" alt="AmubaCraft Logo"></a>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="javascript:void(0)">
+        <i class="fa-solid fa-bars fa-2xl"></i>
+      </a>
+    </div>
+    <nav class="mobile-nav">
+      <a href="javascript:void(0)" class="close-btn" id="close-btn"><i class="fa-solid fa-xmark fa-xl"></i></a>
+      <div class="mobile-links">
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#blogs">Blogs</a>
+      </div>
+      <div class="mobile-icons">
+        <a class="instagram icon" href="https://instagram.com/amubacraft._" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <a class="github icon" href="https://github.com/amubacr" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+        <a class="linkedin icon" href="https://linkedin.com/in/ahmatframuja"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+      </div>
+    </nav>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#blogs">Blogs</a>
+    </nav>
+    <div class="icons">
+      <a class="instagram icon" href="https://instagram.com/amubacraft._" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+      <a class="github icon" href="https://github.com/amubacr" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+      <a class="linkedin icon" href="https://linkedin.com/in/ahmatframuja"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+    </div>
+  </header>
+  <main>
+    <div class="first-container" id="home">
+      <div class="main-page">
+        <figure class="image-1">
+          <img src="assets/img/Element-1.svg" alt="Computer Illustration Picture">
+        </figure>
+        <section class="main-container-content">
+          <h3>hello, my name is</h3>
           <h2>Ahmat Framuja</h2>
-          <section class="job">
-            <h1>I'M FULL-STACK WEB DEVELOPER</h1>
-          </section>
-          <div class="break-1"></div>
-        </article>
-        <div class="learn-more">
-          <a href="#portfolio" class="__next-1">
-            Learn More
-            <i class="fa-solid fa-sort-down fa-2xl arrow-down"></i>
-          </a>
+          <div class="occupation">
+            i'm full-stack web developer.
+          </div>
+          <div class="occupation-line"></div>
+        </section>
+      </div>
+      <div class="learn-more">
+        <a href="#portfolio">Learn More</a> <br>
+        <i class="fa-solid fa-angle-down fa-xl arrow-down"></i>
+      </div>
+    </div>
+    <div class="portfolio-container" id="portfolio">
+      <h2 class="portfolio-header">
+        Portfolio
+      </h2>
+      <div class="switch-btn">
+        <input type="radio" name="switch" class="switch" id="switch-1" checked>
+        <label for="switch-1" class="switch-1">Website</label>
+        <input type="radio" name="switch" class="switch" id="switch-2">
+        <label for="switch-2" class="switch-2">Design</label>
+      </div>
+      <!-- ! Card Section -->
+      <section class="portfolio-card card-1">
+        <figure>
+          <img src="assets/img/project-1.webp" alt="Project-1">
+        </figure>
+        <div class="project-content">
+          <h2>Project - 1</h2>
+          <h1>Katou Megumi Bio Landing Page</h1>
+          <p class="project-description">
+            The landing page provides a comprehensive overview of Katou Megumi, the main heroine of the anime series Saenai Heroine no Sodatekata. This page includes information on her birth date, characteristics, personality, and full appearance. This landing page is a valuable resource for fans of the anime series and anyone interested in learning more about the main heroine character.
+          </p>
+          <button class="read-more-btn">
+            <i class="fa-solid fa-arrow-right fa-xl"></i>
+            Read More
+          </button>
         </div>
-        <article class="portfolio" id="portfolio">
-          <div class="title-section">
-            <h2>Portfolio</h2>
-            <nav class="portfolio-options">
-              <input type="radio" class="ra-1" id="websiteRadio" name="tab" value="website" checked>
-              <label for="websiteRadio" class="option-1 option">Website</label>
-
-              <input type="radio" class="ra-2" id="otherRadio" name="tab" value="other">
-              <label for="otherRadio" class="option-2 option">Other</label>
-            </nav>
-          </div>
-          <section class="left-card card-1">
-            <h3>Project-1</h3>
-            <h2>Katou Megumi Bio Landing Page</h2>
-            <p>
-              The landing page provides a comprehensive overview of Katou Megumi, the main heroine of the anime series Saenai Heroine no Sodatekata. This page includes information on her birth date, characteristics, personality, and full appearance. This landing page is a valuable resource for fans of the anime series and anyone interested in learning more about the main heroine character.
-            </p>
-            <figure>
-              <img src="assets/img/project-1.webp" alt="Landing Page Anime Waifu Character">
-              <div class="border"></div>
-            </figure>
-            <a href="#portfolio" class="button-card-left">
-              <i class="fa-solid fa-arrow-right arrow-right"> </i>
-              Read More
-            </a>
-          </section>
-          <section class="right-card card-2">
-            <h3>Project-2</h3>
-            <h2>Link Direction Website</h2>
-            <p>
-              Link direct website is a valuable resource for anyone looking for a simple and effective way to showcase their social media links and contact information. It offers a variety of features that make it stand out from other Linktree clones. Some of the unique features of this website include the ability to connect with multiple social media platforms, and the availability of free customization and open source.
-            </p>
-            <figure>
-              <img src="assets/img/project-2.webp" alt="Link Tree Direction Thumbnail">
-              <div class="border"></div>
-            </figure>
-            <a href="" class="button-card-right">
-              Read More
-              <i class="fa-solid fa-arrow-left arrow-left"> </i>
-            </a>
-          </section>
-          <section class="left-card card-3">
-            <h3>Project-3</h3>
-            <h2>Web-Based Calculator</h2>
-            <p>
-              The web-based calculator has a similar interface to the calculator on the Apple iOS operating system, but with a wealth of features based on the calculator on Android. The feature include a standard calculator, scientific calculator for complex mathematical calculation, basic converter and currency converter, and binary calculator for binary calculations. This calculator is easy to use, and it is available in multiple languages.
-            </p>
-            <figure>
-              <img src="assets/img/project-3.webp" alt="Web-Based Calculator">
-              <div class="border"></div>
-            </figure>
-            <a href="" class="button-card-left">
-              <i class="fa-solid fa-arrow-right arrow-right"> </i>
-              Read More
-            </a>
-          </section>
-          <section class="right-card card-4">
-            <h3>Project-4</h3>
-            <h2>Admin Panel Dashboard</h2>
-            <p>
-              Admin panel dashboard website is a valuable resource for anyone who needs to manage a complex system. The dashboard offers a wide range of features, including user-friendly interface that makes it easy to navigate, powerful engine that can handle even the most demanding systems using tech stack as JS, PHP, React, and Next JS, and wide range of technologies that can be used to customize the dashboard.
-            </p>
-            <figure>
-              <img src="assets/img/project-4.webp" alt="Admin Panel Dashboard">
-              <div class="border"></div>
-            </figure>
-            <a href="" class="button-card-right">
-              Read More
-              <i class="fa-solid fa-arrow-left arrow-left"> </i>
-            </a>
-          </section>
-          <div class="carrousels">
-            <div class="bullet">
-              <div class="selected-bullet"></div>
-            </div>
-            <div class="bullet"></div>
-            <div class="bullet"></div>
-          </div>
-        </article>
-        <aside class="profileCard" id="about">
-          <img src="assets/img/ProfileCardBanner.png" alt="Profile Banner" class="profile-banner">
-          <section class="profile-wrapper">
-            <img src="assets/img/ProfilePicture.png" alt="Profile Picture" class="profile-picture">
-            <h1 class="name">Ahmat Framuja</h1>
-            <h4 class="occupations">Web Developer | Student</h4>
-          </section>
-          <section class="content-wrappers">
-            <h2 class="content-head">About</h2>
-            <div class="line-break"></div>
-            <p class="content-desc-1">
-              My name is Ahmat Framuja, and my nickname online is Amubacraft. I am a full-stack web developer who works independently, and I also have one year of experience as a UI/UX designer. I use Linux distributions on my desktop, such as MX Linux, Fedora, Debian, Arch Linux, and several other Linux distributions.
-            </p>
-            <p class="content-desc-2">
-              I work the hours I want and where I have free time, such as night or morning. Of course, I will work if I have an internet connection. I’m always looking for new challenges, so if you have any projects that you think I would be a good fit for, please don't hesitate to contact me.
-            </p>
-          </section>
-          <menu class="profile-tabs">
-            <a href="#">About</a>
-            <a href="#">Experience</a>
-            <a href="#">Skills</a>
-            <a href="#">Contact</a>
-          </menu>
-        </aside>
-      </main>
-      <footer>
-        <img src="assets/img/icon/brand.svg" alt="Amuba Logo">
-        <p class="copyright">
-          This web made with ❤️ by <span>@AmubaCraft - Ahmat Framuja </span><br>
-          <span>©2023 AmubaCraft - amubacraft.my.id</span><br>
-          <span>All rights reserved.</span>
-        </p>
-        <div class="box"></div>
-      </footer>
-      <script src="js/index.js"></script>
-  </body>
+      </section>
+      <section class="portfolio-card card-2">
+        <figure>
+          <img src="assets/img/project-2.webp" alt="Project-2">
+        </figure>
+        <div class="project-content">
+          <h2>Project - 2</h2>
+          <h1>Link Direction Website</h1>
+          <p class="project-description">
+            Link direct website is a valuable resource for anyone looking for a simple and effective way to showcase their social media links and contact information. It offers a variety of features that make it stand out from other Linktree clones. Some of the unique features of this website include the ability to connect with multiple social media platforms, and the availability of free customization and open source.
+          </p>
+          <button class="read-more-btn">
+            <i class="fa-solid fa-arrow-right fa-xl"></i>
+            Read More
+          </button>
+        </div>
+      </section>
+      <section class="portfolio-card card-3">
+        <figure>
+          <img src="assets/img/project-3.webp" alt="Project-3">
+        </figure>
+        <div class="project-content">
+          <h2>Project - 3</h2>
+          <h1>Web-Based Calculator</h1>
+          <p class="project-description">
+            The web-based calculator has a similar interface to the calculator on the Apple iOS operating system, but with a wealth of features based on the calculator on Android. The feature include a standard calculator, scientific calculator for complex mathematical calculation, basic converter and currency converter, and binary calculator for binary calculations. This calculator is easy to use, and it is available in multiple languages.
+          </p>
+          <button class="read-more-btn">
+            <i class="fa-solid fa-arrow-right fa-xl"></i>
+            Read More
+          </button>
+        </div>
+      </section>
+      <!-- ! Pagination Section -->
+      <div class="pagination-container">
+        <button><i class="fa-solid fa-angle-left fa-xl"></i></button>
+        <input type="radio" name="option" id="first-btn" checked>
+        <label for="first-btn" class="option">1</label>
+        <input type="radio" name="option" id="second-btn">
+        <label for="second-btn" class="option">2</label>
+        <input type="radio" name="option" id="third-btn">
+        <label for="third-btn" class="option">3</label>
+        <button><i class="fa-solid fa-angle-right fa-xl"></i></button>
+      </div>
+    </div>
+    <aside class="about-container" id="about" >
+      <div class="about-card">
+        <div class="about-header">
+          <figure class="profile-picture">
+            <img src="assets/img/ProfilePicture.png" alt="Profile Picture">
+          </figure>
+          <figure class="profile-banner">
+            <img src="assets/img/ProfileCardBanner.png" alt="Profile Banner">
+          </figure>
+          <h1>Ahmat Framuja</h1>
+          <h3>Web Developer | Student</h3>
+        </div>
+        <div class="about-contents">
+          <h2 class="content-header">About</h2>
+          <p class="about-description-1">
+            My name is Ahmat Framuja, and my nickname online is Amubacraft. I am a full-stack web developer who works independently, and I also have one year of experience as a UI/UX designer. I use Linux distributions on my desktop, such as MX Linux, Fedora, Debian, Arch Linux, and several other Linux distributions.
+          </p>
+          <p class="about-description-2">
+            I work the hours I want and where I have free time, such as night or morning. Of course, I will work if I have an internet connection. I always looking for new challenges, so if you have any projects that you think I would be a good fit for, please don't hesitate to contact me.
+          </p>
+        </div>
+        <menu class="about-menu">
+          <a href="javascript:void(0)">About</a>
+          <a href="javascript:void(0)">Experience</a>
+          <a href="javascript:void(0)">Skills</a>
+          <a href="javascript:void(0)">Contact</a>
+        </menu>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <figure class="footer-brand">
+      <img src="assets/img/icon/brand.svg" alt="Amubacraft Logo">
+    </figure>
+    <p class="copyright">
+      This web made with ❤️ by <span>@AmubaCraft - Ahmat Framuja<br/>&copy;2023 AmubaCraft - amubacraft.my.id<br/>All rights reserved.</span>
+    </p>
+    <div class="footer-social-network">
+      <a href="https://pinterest.com/amubacraft/" class="pinterest" target="_blank">
+        <i class="fa-brands fa-pinterest fa-xl"></i>
+      </a>
+      <a href="https://linkedin.com/in/ahmatframuja" class="linkedin" target="_blank">
+        <i class="fa-brands fa-linkedin fa-xl"></i>
+      </a>
+      <a href="https://twitter.com/amubacraft__" class="twitter" target="_blank">
+        <i class="fa-brands fa-x-twitter fa-xl"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="src/js/index.js"></script>
+</body>
 </html>
