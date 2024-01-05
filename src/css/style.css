@@ -40,9 +40,15 @@ html {
 
 body {
   background-color: var(--first-blue-color);
+  max-width: 100vw;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 header {
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
   display: flex;
   justify-content: space-between;
   border-bottom: .1rem solid rgba(0, 0, 0, .34);
@@ -573,7 +579,7 @@ footer .footer-social-network .twitter:hover {
   }
 
   .brand {
-    margin: 0 0 0 5rem;
+    margin: 0 0 0 2rem;
   }
 
   .brand img {
@@ -601,7 +607,7 @@ footer .footer-social-network .twitter:hover {
 
   .mobile-nav {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -100%;
     width: 25rem;
@@ -694,7 +700,7 @@ footer .footer-social-network .twitter:hover {
 
 @media screen and (max-width: 768px) {
   .brand {
-    margin: 0 0 0 3.5rem;
+    margin: 0 0 0 2rem;
   }
 
   .mobile-nav {
@@ -808,10 +814,6 @@ footer .footer-social-network .twitter:hover {
 }
 
 @media screen and (max-width: 425px) {
-  .brand {
-    margin-left: 1.8rem;
-  }
-
   .mobile-menu {
     left: 25vw;
   }
@@ -936,16 +938,19 @@ footer .footer-social-network .twitter:hover {
 }
 
 @media screen and (max-width: 375px) {
-  .brand {
-    margin-left: 2.8rem;
+  body {
+    max-width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    max-width: 100%;
+    width: 100%;
   }
 
   .mobile-menu {
     left: 22vw;
-  }
-
-  main {
-    margin-left: 2rem;
   }
 
   .image-1 {
@@ -999,10 +1004,6 @@ footer .footer-social-network .twitter:hover {
     font-size: 1.15rem;
   }
 
-  footer .footer-brand {
-    margin-left: 1.3rem;
-  }
-
   footer .copyright {
     margin-left: 1rem;
     font-size: 1rem;
@@ -1015,23 +1016,22 @@ footer .footer-social-network .twitter:hover {
 
 @media screen and (max-width: 320px) {
   body {
-    width: 145vw;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 
-  .brand {
-    margin: 0 -2rem 0 0;
+  header {
+    width: 100%;
+    max-width: 100%;
   }
 
   .mobile-menu {
-    left: 40vw;
+    left: 20vw;
   }
 
   .image-1 img {
-    height: 35rem;
-  }
-
-  main {
-    margin-left: 3rem;
+    height: 25rem;
   }
 
   .first-container {
@@ -1047,24 +1047,24 @@ footer .footer-social-network .twitter:hover {
   }
 
   .main-container-content h3 {
-    font-size: 2rem;
-    margin-right: 0;
+    font-size: 1.6rem;
+    margin-right: 1rem;
   }
 
   .main-container-content h2 {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     margin-bottom: 0;
     margin-right: 0;
   }
 
   .main-container-content .occupation {
-    width: 30rem;
-    font-size: 1.6rem;
+    width: 23rem;
+    font-size: 1.2rem;
     margin-left: 1.4rem;
   }
 
   .main-container-content .occupation-line {
-    width: 30.5rem;
+    width: 23.5rem;
     margin-left: 1.4rem;
   }
 
@@ -1076,11 +1076,36 @@ footer .footer-social-network .twitter:hover {
     position: relative;
   }
 
+  .portfolio-container .switch-btn label {
+    font-size: .95rem;
+  }
+
   .portfolio-card {
-    width: 135vw;
+    width: 95vw;
+  }
+
+  .portfolio-container .pagination-container {
+    margin-right: .5rem;
+  }
+
+  .portfolio-container .pagination-container button {
+    font-size: 1rem;
+    padding: .7rem 1.1rem;
+    margin-left: .6rem;
+    margin-right: -.4rem;
+  }
+
+  .portfolio-container .pagination-container label {
+    font-size: 1rem;
+    padding: .7rem 1.1rem;
+    margin-left: 0;
   }
 
   .about-card {
-    width: 125vw;
+    width: 90vw;
+  }
+
+  .about-card .about-menu a {
+    font-size: 1rem;
   }
 }
